@@ -11,4 +11,9 @@ $(function(){
     $('.mbtn').on('click',function(){
         $('.gnb').toggleClass('on')
     })
+
+    $(window).on('resize', function(){
+        $('.gnb').removeClass('on');
+        $('.sub_menu').removeAttr('style')
+    })
 })
