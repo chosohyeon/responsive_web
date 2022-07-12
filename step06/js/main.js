@@ -16,4 +16,10 @@ $(function(){
         $('.gnb').removeClass('on');
         $('.sub_menu').removeAttr('style')
     })
+
+    $('.mclone').on('click', function(){
+        var siteMap = $('.gnb').clone().addClass('siteMap').wrap('<div></div>');
+        console.log(siteMap);
+        $('body').append(siteMap)
+    })
 })
